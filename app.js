@@ -14,7 +14,7 @@ const T = {
     catalog: 'Бағалар', cabinet: 'Кабинет', admin: 'Админ', login: 'Кіру', logout: 'Шығу', register: 'Тіркелу',
     heroT: 'Презентация, реферат, сабақ жоспары — жасап береміз',
     heroP: 'Мұғалімдерге, оқушыларға, студенттерге және магистранттарға сапалы жұмыс. WhatsApp-қа жазасыз, Kaspi арқылы төлейсіз — дайын жұмыс жеке кабинетіңізде ашылады.',
-    toCatalog: 'Бағаларды көру', order: 'Тапсырыс беру', pricesP: 'Тапсырыс WhatsApp арқылы қабылданады. Тақырыбын, мерзімін жазыңыз — бәрін келісеміз.', deal: 'Келісім бойынша', calcQ: 'Неше керек?', promo: 'Промокод', promoOk: 'Промокод қабылданды', promoBad: 'Мұндай промокод жоқ', urgentW: 'Шұғыл', total: 'Барлығы', pfT: 'Жұмыс мысалдары', pfP: 'Біз жасаған жұмыстардан үлгі — ашып көріңіз.', pfOpen: 'Ашып көру', offT: 'Акциялар', promoUse: 'промокод:', needLogin: 'Тапсырыс беру үшін аккаунтқа кіріңіз немесе тіркеліңіз', loginHint: 'Тапсырыс беру үшін тіркелу керек — 1 минут', promoFirst: 'Промокод тек алғашқы тапсырысқа жарамды', orders: 'Тапсырыстар', myOrders: 'Менің тапсырыстарым', noOrders: 'Әзірге тапсырыс жоқ.', st_new: 'Жаңа', st_in_work: 'Жұмыста', st_done: 'Дайын', st_cancelled: 'Бас тартылды', orderSent: 'Тапсырыс жіберілді! WhatsApp-та хабарламаны жіберіңіз.', orderNo: 'Тапсырыс', client: 'Клиент', waOrder: 'Сәлеметсіз бе! Жаңа тапсырыс', askWa: 'WhatsApp-қа жазу', waHi: 'Сәлеметсіз бе! Тапсырыс бергім келеді:', start: 'Тіркелу — тегін',
+    toCatalog: 'Бағаларды көру', order: 'Тапсырыс беру', pricesP: 'Тапсырыс WhatsApp арқылы қабылданады. Тақырыбын, мерзімін жазыңыз — бәрін келісеміз.', deal: 'Келісім бойынша', calcQ: 'Неше керек?', promo: 'Промокод', promoOk: 'Промокод қабылданды', promoBad: 'Мұндай промокод жоқ', urgentW: 'Шұғыл', total: 'Барлығы', pfT: 'Жұмыс мысалдары', pfP: 'Біз жасаған жұмыстардан үлгі — ашып көріңіз.', pfOpen: 'Ашып көру', offT: 'Акциялар', promoUse: 'промокод:', aboutT: 'Біз туралы', privT: 'Құпиялылық саясаты', consent: 'Тіркелу арқылы сіз келісесіз:', contactsT: 'Байланыс', needLogin: 'Тапсырыс беру үшін аккаунтқа кіріңіз немесе тіркеліңіз', loginHint: 'Тапсырыс беру үшін тіркелу керек — 1 минут', promoFirst: 'Промокод тек алғашқы тапсырысқа жарамды', orders: 'Тапсырыстар', myOrders: 'Менің тапсырыстарым', noOrders: 'Әзірге тапсырыс жоқ.', st_new: 'Жаңа', st_in_work: 'Жұмыста', st_done: 'Дайын', st_cancelled: 'Бас тартылды', orderSent: 'Тапсырыс жіберілді! WhatsApp-та хабарламаны жіберіңіз.', orderNo: 'Тапсырыс', client: 'Клиент', waOrder: 'Сәлеметсіз бе! Жаңа тапсырыс', askWa: 'WhatsApp-қа жазу', waHi: 'Сәлеметсіз бе! Тапсырыс бергім келеді:', start: 'Тіркелу — тегін',
     whoT: 'Сіз кімсіз?', whoP: 'Таңдаңыз — сізге лайықты жұмыс жасауға көмектеседі.', from: 'бастап',
     newT: 'Бағалар', all: 'Толығырақ',
     s1T: 'WhatsApp-қа жазыңыз', s1P: 'Не керек екенін, тақырыбын және мерзімін айтыңыз.',
@@ -47,7 +47,7 @@ const T = {
     catalog: 'Цены', cabinet: 'Кабинет', admin: 'Админ', login: 'Войти', logout: 'Выйти', register: 'Регистрация',
     heroT: 'Презентации, рефераты, планы уроков — сделаем для вас',
     heroP: 'Качественные работы для учителей, школьников, студентов и магистрантов. Пишете в WhatsApp, оплачиваете через Kaspi — готовая работа откроется в личном кабинете.',
-    toCatalog: 'Посмотреть цены', order: 'Заказать', pricesP: 'Заказы принимаем в WhatsApp. Напишите тему и срок — всё обсудим.', deal: 'Договорная', calcQ: 'Сколько нужно?', promo: 'Промокод', promoOk: 'Промокод принят', promoBad: 'Такого промокода нет', urgentW: 'Срочно', total: 'Итого', pfT: 'Примеры работ', pfP: 'Образцы наших работ — откройте и посмотрите.', pfOpen: 'Открыть', offT: 'Акции', promoUse: 'промокод:', needLogin: 'Чтобы заказать, войдите или зарегистрируйтесь', loginHint: 'Для заказа нужна регистрация — 1 минута', promoFirst: 'Промокод действует только на первый заказ', orders: 'Заказы', myOrders: 'Мои заказы', noOrders: 'Пока нет заказов.', st_new: 'Новый', st_in_work: 'В работе', st_done: 'Готов', st_cancelled: 'Отменён', orderSent: 'Заказ создан! Отправьте сообщение в WhatsApp.', orderNo: 'Заказ', client: 'Клиент', waOrder: 'Здравствуйте! Новый заказ', askWa: 'Написать в WhatsApp', waHi: 'Здравствуйте! Хочу заказать:', start: 'Регистрация — бесплатно',
+    toCatalog: 'Посмотреть цены', order: 'Заказать', pricesP: 'Заказы принимаем в WhatsApp. Напишите тему и срок — всё обсудим.', deal: 'Договорная', calcQ: 'Сколько нужно?', promo: 'Промокод', promoOk: 'Промокод принят', promoBad: 'Такого промокода нет', urgentW: 'Срочно', total: 'Итого', pfT: 'Примеры работ', pfP: 'Образцы наших работ — откройте и посмотрите.', pfOpen: 'Открыть', offT: 'Акции', promoUse: 'промокод:', aboutT: 'О нас', privT: 'Политика конфиденциальности', consent: 'Регистрируясь, вы соглашаетесь с документом:', contactsT: 'Контакты', needLogin: 'Чтобы заказать, войдите или зарегистрируйтесь', loginHint: 'Для заказа нужна регистрация — 1 минута', promoFirst: 'Промокод действует только на первый заказ', orders: 'Заказы', myOrders: 'Мои заказы', noOrders: 'Пока нет заказов.', st_new: 'Новый', st_in_work: 'В работе', st_done: 'Готов', st_cancelled: 'Отменён', orderSent: 'Заказ создан! Отправьте сообщение в WhatsApp.', orderNo: 'Заказ', client: 'Клиент', waOrder: 'Здравствуйте! Новый заказ', askWa: 'Написать в WhatsApp', waHi: 'Здравствуйте! Хочу заказать:', start: 'Регистрация — бесплатно',
     whoT: 'Кто вы?', whoP: 'Выберите — так мы сделаем работу под ваш уровень.', from: 'от',
     newT: 'Цены', all: 'Подробнее',
     s1T: 'Напишите в WhatsApp', s1P: 'Расскажите, что нужно: тема и срок.',
@@ -250,7 +250,7 @@ function renderChrome() {
   const name = cfg.SITE_NAME || 'Tez Kömek';
   const sp = name.indexOf(' ');
   $('#siteName').innerHTML = sp > 0 ? `<span class="tz">${esc(name.slice(0, sp))}</span>${esc(name.slice(sp))}` : esc(name); $('#footName').textContent = '© ' + new Date().getFullYear() + ' ' + name; document.title = name;
-  $('#footText').innerHTML = cfg.WHATSAPP ? `${t('foot')} <a href="https://wa.me/${esc(cfg.WHATSAPP)}" target="_blank" rel="noopener">${esc(cfg.WHATSAPP_SHOW || '+' + cfg.WHATSAPP)}</a>` : '';
+  $('#footText').innerHTML = `<a href="#/about">${t('aboutT')}</a> · <a href="#/privacy">${t('privT')}</a>` + (cfg.WHATSAPP ? ` · ${t('foot')} <a href="https://wa.me/${esc(cfg.WHATSAPP)}" target="_blank" rel="noopener">${esc(cfg.WHATSAPP_SHOW || '+' + cfg.WHATSAPP)}</a>` : '');
   $$('.lang button').forEach(b => b.classList.toggle('on', b.dataset.lang === lang));
   const r = location.hash || '#/';
   const links = [['#/prices', t('catalog')]];
@@ -446,7 +446,7 @@ function buy(p) {
   openModal(`
     <h2>${t('payT')}</h2>
     <p class="muted">${esc(titleOf(p))}</p>
-    <div class="kaspi"><span>${t('payP')}</span><b>${esc(cfg.KASPI_PHONE || '')}</b><span>${esc(cfg.KASPI_NAME || '')} · <strong>${money(p.price)}</strong></span></div>
+    <div class="paybox"><span>${t('payP')}</span><b>${esc(cfg.KASPI_PHONE || '')}</b><span>${esc(cfg.KASPI_NAME || '')} · <strong>${money(p.price)}</strong></span></div>
     <form class="form" id="payF">
       <label>${t('payNote')}<input class="input" name="note" required maxlength="120" value="${esc(S.profile && S.profile.full_name || '')}"></label>
       <button class="btn sun" type="submit">${t('payDone')}</button>
@@ -478,6 +478,7 @@ function pageLogin(mode) {
       ${reg ? `<label>${t('name')}<input class="input" name="name" required autocomplete="name"></label>` : ''}
       <label>${t('email')}<input class="input" name="email" type="email" required autocomplete="email"></label>
       <label>${t('password')}<input class="input" name="pw" type="password" required minlength="6" autocomplete="${reg ? 'new-password' : 'current-password'}"></label>
+      ${reg ? `<p class="muted" style="font-size:13px;margin:0">${t('consent')} <a href="#/privacy">${t('privT')}</a></p>` : ''}
       <button class="btn" type="submit">${reg ? t('register') : t('login')}</button>
     </form>
     ${reg ? '' : `<button class="btn ghost sm" id="forgot" style="align-self:center">${t('forgot')}</button>`}
@@ -650,6 +651,68 @@ async function editWork(p) {
   });
 }
 
+
+const DOCS = {
+  about: {
+    kk: (n, wa) => `
+      <h1>Біз туралы</h1>
+      <p class="lead"><b>${n}</b> — мұғалімдерге, оқушыларға, студенттерге және магистранттарға оқу материалдарын дайындауға көмектесетін қызмет.</p>
+      <h2>Не істейміз</h2>
+      <ul><li>Презентациялар (Canva, PowerPoint, 3D анимациялы)</li><li>Рефераттар — тақырып бойынша құрылымы мен мазмұны</li><li>Мұғалімдерге қысқа мерзімді жоспарлар (ҚМЖ), ашық сабақ пен тәрбие сағатының материалдары</li></ul>
+      <h2>Тапсырыс қалай жүреді</h2>
+      <ol><li>Сайтқа тіркеліп, бағалар бетінен қажет жұмысты таңдайсыз.</li><li>Тапсырыс нөмірімен бізге WhatsApp арқылы келеді, мерзімі мен талаптарын келісеміз.</li><li>Төлем қолмен, банк аударымы арқылы жасалады. Сайт карта деректерін ешқашан сұрамайды.</li><li>Дайын жұмыс жеке кабинетіңізде ашылады.</li></ol>
+      <h2>Байланыс</h2>
+      <p>${wa}</p>
+      <p class="muted">Сайт банктің немесе төлем жүйесінің ресми сайты емес және олардың атынан әрекет етпейді.</p>`,
+    ru: (n, wa) => `
+      <h1>О нас</h1>
+      <p class="lead"><b>${n}</b> — сервис, который помогает учителям, школьникам, студентам и магистрантам готовить учебные материалы.</p>
+      <h2>Что мы делаем</h2>
+      <ul><li>Презентации (Canva, PowerPoint, 3D с анимацией)</li><li>Рефераты — структура и содержание по теме</li><li>Для учителей: краткосрочные планы (КСП), материалы к открытым урокам и классным часам</li></ul>
+      <h2>Как проходит заказ</h2>
+      <ol><li>Вы регистрируетесь на сайте и выбираете работу на странице цен.</li><li>Заказ с номером приходит нам в WhatsApp, мы согласуем сроки и требования.</li><li>Оплата — вручную, банковским переводом. Сайт никогда не запрашивает данные карты.</li><li>Готовая работа открывается в вашем личном кабинете.</li></ol>
+      <h2>Контакты</h2>
+      <p>${wa}</p>
+      <p class="muted">Сайт не является официальным сайтом банка или платёжной системы и не действует от их имени.</p>`
+  },
+  privacy: {
+    kk: (n, wa) => `
+      <h1>Құпиялылық саясаты</h1>
+      <p class="lead">Бұл бетте ${n} сайты қандай деректер жинайтыны және оларды қалай пайдаланатыны жазылған.</p>
+      <h2>Қандай деректер жиналады</h2>
+      <ul><li>Тіркелу кезінде: аты-жөніңіз, email, құпиясөз (шифрланған түрде сақталады, біз оны көрмейміз).</li><li>Өзіңіз қалауыңызша: телефон нөмірі және мәртебеңіз (мұғалім, оқушы, студент т.б.).</li><li>Тапсырыстарыңыз: не тапсырыс бергеніңіз, күні, сомасы, күйі.</li></ul>
+      <h2>Не жиналмайды</h2>
+      <p>Сайт банк картасының деректерін, Kaspi немесе басқа банктің логині мен құпиясөзін, SMS кодтарын <b>ешқашан</b> сұрамайды. Мұндай деректерді біздің атымыздан сұраса — бұл алаяқтық.</p>
+      <h2>Деректер не үшін қолданылады</h2>
+      <ul><li>Тапсырысты орындау және сізбен байланысу.</li><li>Дайын жұмысты жеке кабинетіңізде көрсету.</li></ul>
+      <p>Деректеріңіз үшінші тұлғаларға сатылмайды және берілмейді.</p>
+      <h2>Қай жерде сақталады</h2>
+      <p>Деректер Supabase бұлттық дерекқорында сақталады; оған тек сайт әкімшісі қол жеткізе алады. Байланыс қорғалған (HTTPS).</p>
+      <h2>Деректерді өшіру</h2>
+      <p>Аккаунтыңызды және барлық деректеріңізді өшіргіңіз келсе, бізге жазыңыз: ${wa}</p>`,
+    ru: (n, wa) => `
+      <h1>Политика конфиденциальности</h1>
+      <p class="lead">Здесь описано, какие данные собирает сайт ${n} и как они используются.</p>
+      <h2>Какие данные собираются</h2>
+      <ul><li>При регистрации: имя, email, пароль (хранится в зашифрованном виде, мы его не видим).</li><li>По желанию: номер телефона и статус (учитель, школьник, студент и т.д.).</li><li>Ваши заказы: что заказано, дата, сумма, статус.</li></ul>
+      <h2>Что не собирается</h2>
+      <p>Сайт <b>никогда</b> не запрашивает данные банковской карты, логин и пароль от Kaspi или другого банка, SMS-коды. Если кто-то просит их от нашего имени — это мошенничество.</p>
+      <h2>Зачем используются данные</h2>
+      <ul><li>Для выполнения заказа и связи с вами.</li><li>Для показа готовой работы в личном кабинете.</li></ul>
+      <p>Данные не продаются и не передаются третьим лицам.</p>
+      <h2>Где хранятся</h2>
+      <p>Данные хранятся в облачной базе данных Supabase; доступ к ним есть только у администратора сайта. Соединение защищено (HTTPS).</p>
+      <h2>Удаление данных</h2>
+      <p>Чтобы удалить аккаунт и все данные, напишите нам: ${wa}</p>`
+  }
+};
+function pageDoc(key) {
+  const n = esc(cfg.SITE_NAME || 'Tez Kömek');
+  const wa = cfg.WHATSAPP ? `WhatsApp: <a href="https://wa.me/${esc(cfg.WHATSAPP)}" target="_blank" rel="noopener">${esc(cfg.WHATSAPP_SHOW || '+' + cfg.WHATSAPP)}</a>` + (cfg.CONTACT_EMAIL ? ` · Email: <a href="mailto:${esc(cfg.CONTACT_EMAIL)}">${esc(cfg.CONTACT_EMAIL)}</a>` : '') : '';
+  const d = DOCS[key];
+  mount(`<article class="doc">${(d[lang] || d.kk)(n, wa)}</article>`);
+}
+
 /* ============================ Маршруттар ============================ */
 async function route() {
   renderChrome();
@@ -662,6 +725,7 @@ async function route() {
     else if (h[0] === 'register') pageLogin('register');
     else if (h[0] === 'cabinet') await pageCabinet();
     else if (h[0] === 'admin') await pageAdmin(h[1]);
+    else if (h[0] === 'about' || h[0] === 'privacy') pageDoc(h[0]);
     else await pageHome();
   } catch (e) { fail(e); mount(`<div class="empty">${t('err')}</div>`) }
   $('#view').focus({ preventScroll: true });
