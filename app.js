@@ -14,7 +14,7 @@ const T = {
     catalog: 'Бағалар', cabinet: 'Кабинет', admin: 'Админ', login: 'Кіру', logout: 'Шығу', register: 'Тіркелу',
     heroT: 'Презентация, реферат, сабақ жоспары — жасап береміз',
     heroP: 'Мұғалімдерге, оқушыларға, студенттерге және магистранттарға сапалы жұмыс. WhatsApp-қа жазасыз, Kaspi арқылы төлейсіз — дайын жұмыс жеке кабинетіңізде ашылады.',
-    toCatalog: 'Бағаларды көру', order: 'Тапсырыс беру', pricesP: 'Тапсырыс WhatsApp арқылы қабылданады. Тақырыбын, мерзімін жазыңыз — бәрін келісеміз.', deal: 'Келісім бойынша', calcQ: 'Неше керек?', promo: 'Промокод', promoOk: 'Промокод қабылданды', promoBad: 'Мұндай промокод жоқ', urgentW: 'Шұғыл', total: 'Барлығы', pfT: 'Жұмыс мысалдары', pfP: 'Біз жасаған жұмыстардан үлгі — ашып көріңіз.', pfOpen: 'Ашып көру', offT: 'Акциялар', promoUse: 'промокод:', askWa: 'WhatsApp-қа жазу', waHi: 'Сәлеметсіз бе! Тапсырыс бергім келеді:', start: 'Тіркелу — тегін',
+    toCatalog: 'Бағаларды көру', order: 'Тапсырыс беру', pricesP: 'Тапсырыс WhatsApp арқылы қабылданады. Тақырыбын, мерзімін жазыңыз — бәрін келісеміз.', deal: 'Келісім бойынша', calcQ: 'Неше керек?', promo: 'Промокод', promoOk: 'Промокод қабылданды', promoBad: 'Мұндай промокод жоқ', urgentW: 'Шұғыл', total: 'Барлығы', pfT: 'Жұмыс мысалдары', pfP: 'Біз жасаған жұмыстардан үлгі — ашып көріңіз.', pfOpen: 'Ашып көру', offT: 'Акциялар', promoUse: 'промокод:', needLogin: 'Тапсырыс беру үшін аккаунтқа кіріңіз немесе тіркеліңіз', loginHint: 'Тапсырыс беру үшін тіркелу керек — 1 минут', promoFirst: 'Промокод тек алғашқы тапсырысқа жарамды', orders: 'Тапсырыстар', myOrders: 'Менің тапсырыстарым', noOrders: 'Әзірге тапсырыс жоқ.', st_new: 'Жаңа', st_in_work: 'Жұмыста', st_done: 'Дайын', st_cancelled: 'Бас тартылды', orderSent: 'Тапсырыс жіберілді! WhatsApp-та хабарламаны жіберіңіз.', orderNo: 'Тапсырыс', client: 'Клиент', waOrder: 'Сәлеметсіз бе! Жаңа тапсырыс', askWa: 'WhatsApp-қа жазу', waHi: 'Сәлеметсіз бе! Тапсырыс бергім келеді:', start: 'Тіркелу — тегін',
     whoT: 'Сіз кімсіз?', whoP: 'Таңдаңыз — сізге лайықты жұмыс жасауға көмектеседі.', from: 'бастап',
     newT: 'Бағалар', all: 'Толығырақ',
     s1T: 'WhatsApp-қа жазыңыз', s1P: 'Не керек екенін, тақырыбын және мерзімін айтыңыз.',
@@ -47,7 +47,7 @@ const T = {
     catalog: 'Цены', cabinet: 'Кабинет', admin: 'Админ', login: 'Войти', logout: 'Выйти', register: 'Регистрация',
     heroT: 'Презентации, рефераты, планы уроков — сделаем для вас',
     heroP: 'Качественные работы для учителей, школьников, студентов и магистрантов. Пишете в WhatsApp, оплачиваете через Kaspi — готовая работа откроется в личном кабинете.',
-    toCatalog: 'Посмотреть цены', order: 'Заказать', pricesP: 'Заказы принимаем в WhatsApp. Напишите тему и срок — всё обсудим.', deal: 'Договорная', calcQ: 'Сколько нужно?', promo: 'Промокод', promoOk: 'Промокод принят', promoBad: 'Такого промокода нет', urgentW: 'Срочно', total: 'Итого', pfT: 'Примеры работ', pfP: 'Образцы наших работ — откройте и посмотрите.', pfOpen: 'Открыть', offT: 'Акции', promoUse: 'промокод:', askWa: 'Написать в WhatsApp', waHi: 'Здравствуйте! Хочу заказать:', start: 'Регистрация — бесплатно',
+    toCatalog: 'Посмотреть цены', order: 'Заказать', pricesP: 'Заказы принимаем в WhatsApp. Напишите тему и срок — всё обсудим.', deal: 'Договорная', calcQ: 'Сколько нужно?', promo: 'Промокод', promoOk: 'Промокод принят', promoBad: 'Такого промокода нет', urgentW: 'Срочно', total: 'Итого', pfT: 'Примеры работ', pfP: 'Образцы наших работ — откройте и посмотрите.', pfOpen: 'Открыть', offT: 'Акции', promoUse: 'промокод:', needLogin: 'Чтобы заказать, войдите или зарегистрируйтесь', loginHint: 'Для заказа нужна регистрация — 1 минута', promoFirst: 'Промокод действует только на первый заказ', orders: 'Заказы', myOrders: 'Мои заказы', noOrders: 'Пока нет заказов.', st_new: 'Новый', st_in_work: 'В работе', st_done: 'Готов', st_cancelled: 'Отменён', orderSent: 'Заказ создан! Отправьте сообщение в WhatsApp.', orderNo: 'Заказ', client: 'Клиент', waOrder: 'Здравствуйте! Новый заказ', askWa: 'Написать в WhatsApp', waHi: 'Здравствуйте! Хочу заказать:', start: 'Регистрация — бесплатно',
     whoT: 'Кто вы?', whoP: 'Выберите — так мы сделаем работу под ваш уровень.', from: 'от',
     newT: 'Цены', all: 'Подробнее',
     s1T: 'Напишите в WhatsApp', s1P: 'Расскажите, что нужно: тема и срок.',
@@ -141,13 +141,17 @@ const real = {
     return raise(await sb.from('products').insert(p).select('id').single()).id;
   },
   async saveContent(c) { raise(await sb.from('product_content').upsert(c)) },
-  async deleteProduct(id) { raise(await sb.from('products').delete().eq('id', id)) }
+  async deleteProduct(id) { raise(await sb.from('products').delete().eq('id', id)) },
+  async myOrders(uid) { return raise(await sb.from('orders').select('*').eq('user_id', uid).order('created_at', { ascending: false })) },
+  async createOrder(o) { return raise(await sb.from('orders').insert(o).select('id,num').single()) },
+  async allOrders() { return raise(await sb.from('orders').select('*, profiles(email,full_name,phone)').order('created_at', { ascending: false })) },
+  async setOrderStatus(id, status) { raise(await sb.from('orders').update({ status }).eq('id', id)) }
 };
 
 const demoDb = {
   products: [],
   content: {},
-  purchases: [], users: [], me: null
+  purchases: [], users: [], me: null, orders: [], onum: 0
 };
 const demo = {
   async user() { return demoDb.me },
@@ -169,18 +173,28 @@ const demo = {
   async upload(bucket, path, file) { return bucket === 'covers' ? URL.createObjectURL(file) : path },
   async saveProduct(p) { if (p.id) { Object.assign(demoDb.products.find(x => x.id === p.id), p); return p.id } const id = 'd' + Date.now(); demoDb.products.unshift(Object.assign({ id, created_at: new Date().toISOString() }, p)); return id },
   async saveContent(c) { demoDb.content[c.product_id] = c },
-  async deleteProduct(id) { demoDb.products = demoDb.products.filter(p => p.id !== id) }
+  async deleteProduct(id) { demoDb.products = demoDb.products.filter(p => p.id !== id) },
+  async myOrders(uid) { return demoDb.orders.filter(o => o.user_id === uid) },
+  async createOrder(o) {
+    const uid = demoDb.me && demoDb.me.id;
+    if (o.promo_code && demoDb.orders.some(x => x.user_id === uid && x.status !== 'cancelled')) throw new Error('PROMO_FIRST_ONLY');
+    const rec = Object.assign({ id: 'o' + Date.now(), num: ++demoDb.onum, user_id: uid, status: 'new', created_at: new Date().toISOString() }, o);
+    demoDb.orders.unshift(rec); return { id: rec.id, num: rec.num };
+  },
+  async allOrders() { return demoDb.orders.map(o => Object.assign({}, o, { profiles: demoDb.users.find(u => u.id === o.user_id) })) },
+  async setOrderStatus(id, status) { demoDb.orders.find(o => o.id === id).status = status }
 };
 const api = DEMO ? demo : real;
 
 /* ============================ Күй ============================ */
-const S = { user: null, profile: null, products: null, mine: [], filter: { q: '', kind: '', level: '', subject: '', sort: 'new' } };
+const S = { user: null, profile: null, products: null, mine: [], orders: [], filter: { q: '', kind: '', level: '', subject: '', sort: 'new' } };
 const myStatus = pid => { const p = S.mine.find(x => x.product_id === pid); return p ? p.status : null };
 
 async function loadMe() {
   S.user = await api.user();
   S.profile = S.user ? await api.profile(S.user.id) : null;
   S.mine = S.user ? await api.myPurchases(S.user.id) : [];
+  S.orders = S.user ? await api.myOrders(S.user.id) : [];
   if (S.profile && !S.filter.level && S.profile.role) S.filter.level = S.profile.role;
 }
 async function loadProducts(force) { if (!S.products || force) S.products = await api.products(); return S.products }
@@ -211,6 +225,10 @@ function statusTag(st) {
   if (st === 'pending') return `<span class="tag wait">${t('pending')}</span>`;
   if (st === 'rejected') return `<span class="tag no">${t('rejected')}</span>`;
   return '';
+}
+function ostTag(st) {
+  const cls = { new: 'wait', in_work: 'sky', done: 'ok', cancelled: 'no' }[st] || '';
+  return `<span class="tag ${cls}">${esc(t('st_' + st))}</span>`;
 }
 function card(p) {
   const st = myStatus(p.id);
@@ -245,7 +263,7 @@ function renderChrome() {
   $('#authBox').innerHTML = S.user
     ? `<a class="av" href="#/cabinet" title="${esc(S.profile && S.profile.full_name || S.user.email)}">${esc(((S.profile && S.profile.full_name) || S.user.email || '?').trim().charAt(0).toUpperCase())}</a> <button class="btn ghost sm" id="outBtn">${t('logout')}</button>`
     : `<a class="btn sm" href="#/login">${t('login')}</a>`;
-  const ob = $('#outBtn'); if (ob) ob.onclick = async () => { await api.signOut(); S.user = null; S.profile = null; S.mine = []; renderChrome(); location.hash = '#/' };
+  const ob = $('#outBtn'); if (ob) ob.onclick = async () => { await api.signOut(); S.user = null; S.profile = null; S.mine = []; S.orders = []; renderChrome(); location.hash = '#/' };
   const bar = $('#demoBar'); bar.hidden = !DEMO; bar.textContent = DEMO ? t('demo') : '';
 }
 $$('.lang button').forEach(b => b.onclick = () => { lang = b.dataset.lang; try { localStorage.setItem('lang', lang) } catch (e) {} route() });
@@ -260,7 +278,7 @@ function priceBlocks() {
       <ul>${(g.rows || []).map(r => `<li>
         <span class="pn">${esc(L(r))}${r.hot ? ` <span class="tag hot">${esc(L(r.hot))}</span>` : ''}</span>
         <b class="pp">${typeof r.price === 'number' ? money(r.price) : t('deal')}</b>
-        <a class="btn sm ghost" href="${esc(waLink(t('waHi') + ' ' + L(g) + ' — ' + L(r)))}" target="_blank" rel="noopener">${t('order')}</a>
+        ${typeof r.price === 'number' ? `<button class="btn sm ghost" data-row data-item="${esc(L(g) + ' — ' + L(r))}" data-total="${esc(r.price)}">${t('order')}</button>` : `<a class="btn sm ghost" href="${esc(waLink(t('waHi') + ' ' + L(g) + ' — ' + L(r)))}" target="_blank" rel="noopener">${t('order')}</a>`}
       </li>`).join('')}</ul>
       ${g.unit ? `<div class="calc" data-unit="${esc(g.unit)}" data-g="${esc(L(g))}" data-u="${esc(lang === 'ru' ? (g.unitRu || '') : (g.unitKk || ''))}">
         <label>${t('calcQ')} <input class="input cq" type="number" min="1" max="500" value="${esc(g.calcDefault || 1)}"></label>
@@ -270,7 +288,8 @@ function priceBlocks() {
           ${(cfg.PROMOS || []).length ? `<input class="input cp" placeholder="${esc(t('promo'))}" maxlength="20" autocomplete="off">` : ''}
         </div>
         <span class="calc-msg"></span>
-        <a class="btn sm calc-go" target="_blank" rel="noopener" href="#">${t('order')}</a>
+        <button class="btn sm calc-go">${t('order')}</button>
+        ${S.user ? '' : `<span class="calc-hint muted">${t('loginHint')}</span>`}
       </div>` : ''}
       ${g.note ? `<p class="muted pnote">${esc(L(g.note))}</p>` : ''}
     </div>`).join('')}</div>`;
@@ -286,20 +305,49 @@ function bindCalc() {
       const urgent = u && u.checked;
       if (urgent) total = Math.round(total * (1 + cfg.URGENT.percent / 100));
       const code = p ? p.value.trim().toUpperCase() : '';
-      const promo = code ? (cfg.PROMOS || []).find(x => x.code.toUpperCase() === code) : null;
+      const found = code ? (cfg.PROMOS || []).find(x => x.code.toUpperCase() === code) : null;
+      const used = S.orders.some(o => o.status !== 'cancelled');
+      const promo = found && !used ? found : null;
       if (promo) total = Math.round(total * (1 - promo.percent / 100));
-      msg.textContent = code ? (promo ? '✓ ' + t('promoOk') + ' (−' + promo.percent + '%)' : t('promoBad')) : '';
+      msg.textContent = code ? (promo ? '✓ ' + t('promoOk') + ' (−' + promo.percent + '%)' : (found ? t('promoFirst') : t('promoBad'))) : '';
       msg.className = 'calc-msg ' + (code ? (promo ? 'ok' : 'bad') : '');
       sum.textContent = money(total);
       sum.animate([{ transform: 'scale(1.08)' }, { transform: 'scale(1)' }], { duration: 250, easing: 'ease-out' });
       let text = `${t('waHi')} ${box.dataset.g} — ${n} ${box.dataset.u}`;
       if (urgent) text += `, ${L(cfg.URGENT)}`;
       if (promo) text += `, ${t('promoUse')} ${promo.code}`;
-      text += `. ${t('total')}: ${money(total)}`;
-      go.href = waLink(text);
+      box._order = { item: `${box.dataset.g} — ${n} ${box.dataset.u}`, qty: n, urgent: !!urgent, promo_code: promo ? promo.code : null, total };
     };
+    go.onclick = () => placeOrder(box._order);
     q.oninput = upd; if (u) u.onchange = upd; if (p) p.oninput = upd; upd();
   });
+  $$('[data-row]').forEach(b => b.onclick = () => placeOrder({ item: b.dataset.item, qty: 1, urgent: false, promo_code: null, total: Number(b.dataset.total) }));
+}
+
+async function placeOrder(o) {
+  if (!S.user) {
+    toast(t('needLogin'));
+    try { sessionStorage.setItem('after', location.hash || '#/prices') } catch (e) {}
+    location.hash = '#/register'; return;
+  }
+  const w = window.open('', '_blank');
+  try {
+    const r = await api.createOrder(o);
+    S.orders = await api.myOrders(S.user.id);
+    const who = [(S.profile && S.profile.full_name) || '', S.user.email || '', (S.profile && S.profile.phone) || ''].filter(Boolean).join(', ');
+    let text = `${t('waOrder')} №${r.num}\n${o.item}`;
+    if (o.urgent) text += `\n${L(cfg.URGENT)}`;
+    if (o.promo_code) text += `\n${t('promo')}: ${o.promo_code}`;
+    text += `\n${t('total')}: ${money(o.total)}\n${t('client')}: ${who}`;
+    const url = waLink(text);
+    if (w && !w.closed) w.location.href = url; else location.href = url;
+    toast(t('orderSent'));
+    route();
+  } catch (e) {
+    if (w && !w.closed) w.close();
+    if (String(e && e.message).includes('PROMO_FIRST_ONLY')) { toast(t('promoFirst'), true); S.orders = await api.myOrders(S.user.id); route() }
+    else fail(e);
+  }
 }
 
 function offers() {
@@ -469,6 +517,7 @@ function askRole() {
 async function pageCabinet() {
   if (!S.user) { location.hash = '#/login'; return }
   S.mine = await api.myPurchases(S.user.id);
+  S.orders = await api.myOrders(S.user.id);
   const pr = S.profile || {};
   mount(`
   <div class="sec-h"><h1>${t('cabinet')}</h1></div>
@@ -482,6 +531,13 @@ async function pageCabinet() {
       <button class="btn" type="submit">${t('save')}</button>
     </form>
     <section>
+      <h2 style="margin-bottom:16px">${t('myOrders')}</h2>
+      <div class="list" style="margin-bottom:34px">${S.orders.map((o, i) => `
+        <div class="li" style="animation-delay:${i * 60}ms">
+          <div class="onum">№${esc(o.num)}</div>
+          <div class="tx"><b>${esc(o.item)}</b><span class="muted" style="font-size:14px">${money(o.total)} · ${new Date(o.created_at).toLocaleDateString()}${o.urgent ? ' · ⚡' : ''}${o.promo_code ? ' · ' + esc(o.promo_code) : ''}</span></div>
+          <div class="ac">${ostTag(o.status)}</div>
+        </div>`).join('') || `<div class="empty">${t('noOrders')}<br><br><a class="btn sm" href="#/prices">${t('catalog')}</a></div>`}</div>
       <h2 style="margin-bottom:16px">${t('myWorks')}</h2>
       <div class="list">${S.mine.map((m, i) => { const p = m.products || {}; return `
         <div class="li" style="animation-delay:${i * 60}ms">
@@ -502,12 +558,20 @@ async function pageCabinet() {
 /* ============================ Админ панель ============================ */
 async function pageAdmin(tab) {
   if (!S.profile || !S.profile.is_admin) { location.hash = '#/'; return }
-  tab = tab || 'reqs';
-  const [reqs, prods, users] = await Promise.all([api.allPurchases(), loadProducts(true), api.users()]);
+  tab = tab || 'orders';
+  const [reqs, prods, users, ords] = await Promise.all([api.allPurchases(), loadProducts(true), api.users(), api.allOrders()]);
   const pend = reqs.filter(r => r.status === 'pending').length;
-  const tabs = `<div class="tabs">${[['reqs', t('reqs') + (pend ? `<span class="badge">${pend}</span>` : '')], ['works', t('works2')], ['users', t('users')]].map(([k, l]) => `<button data-tab="${k}" class="${tab === k ? 'on' : ''}">${l}</button>`).join('')}</div>`;
+  const fresh = ords.filter(o => o.status === 'new').length;
+  const tabs = `<div class="tabs">${[['orders', t('orders') + (fresh ? `<span class="badge">${fresh}</span>` : '')], ['reqs', t('reqs') + (pend ? `<span class="badge">${pend}</span>` : '')], ['works', t('works2')], ['users', t('users')]].map(([k, l]) => `<button data-tab="${k}" class="${tab === k ? 'on' : ''}">${l}</button>`).join('')}</div>`;
   let body = '';
-  if (tab === 'reqs') {
+  if (tab === 'orders') {
+    body = `<div class="scroll"><table class="t"><thead><tr><th>№</th><th>${t('date')}</th><th>${t('client')}</th><th>${t('work')}</th><th>${t('total')}</th><th>${t('status')}</th></tr></thead><tbody>
+    ${ords.map(o => { const pr = o.profiles || {}; const wa = (pr.phone || '').replace(/\D/g, ''); return `<tr><td><b>${esc(o.num)}</b></td><td>${new Date(o.created_at).toLocaleString()}</td>
+      <td>${esc(pr.full_name || '—')}<br><span class="muted">${esc(pr.email || '')}</span>${wa ? `<br><a href="https://wa.me/${esc(wa)}" target="_blank" rel="noopener">${esc(pr.phone)}</a>` : ''}</td>
+      <td>${esc(o.item)}${o.urgent ? ' <span class="tag hot">⚡</span>' : ''}${o.promo_code ? ` <span class="tag sky">${esc(o.promo_code)}</span>` : ''}</td><td><b>${money(o.total)}</b></td>
+      <td><select class="input" style="min-width:150px" data-ost="${esc(o.id)}">${['new', 'in_work', 'done', 'cancelled'].map(s => `<option value="${s}" ${o.status === s ? 'selected' : ''}>${esc(t('st_' + s))}</option>`).join('')}</select></td></tr>` }).join('') || `<tr><td colspan="6" class="muted">${t('noOrders')}</td></tr>`}
+    </tbody></table></div>`;
+  } else if (tab === 'reqs') {
     body = `<div class="scroll"><table class="t"><thead><tr><th>${t('date')}</th><th>${t('who')}</th><th>${t('work')}</th><th>${t('payNote')}</th><th>${t('status')}</th><th></th></tr></thead><tbody>
     ${reqs.map(r => `<tr><td>${new Date(r.created_at).toLocaleString()}</td><td>${esc((r.profiles && (r.profiles.full_name || r.profiles.email)) || '')}<br><span class="muted">${esc(r.profiles && r.profiles.email || '')}${r.profiles && r.profiles.phone ? ' · ' + esc(r.profiles.phone) : ''}</span></td>
       <td>${esc(r.products ? titleOf(r.products) : '')}<br><b>${money(r.products && r.products.price)}</b></td><td>${esc(r.payer_note || '')}</td><td>${statusTag(r.status)}</td>
@@ -526,6 +590,7 @@ async function pageAdmin(tab) {
   }
   mount(`<div class="sec-h"><h1>${t('admin')}</h1></div>${tabs}${body}`);
   $$('[data-tab]').forEach(b => b.onclick = () => { location.hash = '#/admin/' + b.dataset.tab });
+  $$('[data-ost]').forEach(sel => sel.onchange = async () => { try { await api.setOrderStatus(sel.dataset.ost, sel.value); toast(t('saved')) } catch (e) { fail(e) } });
   $$('[data-ok]').forEach(b => b.onclick = async () => { try { await api.setStatus(b.dataset.ok, 'paid'); toast(t('saved')); pageAdmin('reqs') } catch (e) { fail(e) } });
   $$('[data-no]').forEach(b => b.onclick = async () => { try { await api.setStatus(b.dataset.no, 'rejected'); pageAdmin('reqs') } catch (e) { fail(e) } });
   $$('[data-grant]').forEach(b => b.onclick = async () => {

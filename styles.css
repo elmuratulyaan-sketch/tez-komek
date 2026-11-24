@@ -245,3 +245,5 @@ table.t{width:100%;border-collapse:collapse;font-size:14px}
 .pf{margin-top:56px}
 .pf-cv::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 80% 20%,rgba(246,181,30,.55),transparent 40%),repeating-radial-gradient(circle at 30% 40%,rgba(255,255,255,.18) 0 1px,transparent 2px 22px)}
 .pf-open{color:var(--sky);font-weight:600;font-size:14px}
+.onum{flex:none;width:64px;height:48px;border-radius:12px;display:grid;place-items:center;background:var(--sky2);color:var(--sky);font-family:Montserrat;font-weight:800}
+.calc-hint{grid-column:1/-1;font-size:13px}

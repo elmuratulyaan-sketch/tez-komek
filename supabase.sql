@@ -98,6 +98,39 @@ drop trigger if exists purchases_paid on public.purchases;
 create trigger purchases_paid before update on public.purchases
   for each row execute function public.stamp_paid();
 
+-- ---------- Тапсырыстар ----------
+create table if not exists public.orders (
+  id          uuid primary key default gen_random_uuid(),
+  num         bigint generated always as identity,
+  user_id     uuid not null default auth.uid() references public.profiles on delete cascade,
+  item        text not null,
+  qty         integer not null default 1 check (qty between 1 and 500),
+  urgent      boolean not null default false,
+  promo_code  text,
+  total       integer not null check (total >= 0),
+  status      text not null default 'new' check (status in ('new','in_work','done','cancelled')),
+  created_at  timestamptz not null default now()
+);
+
+-- Промокод тек алғашқы тапсырысқа; клиент тек өз атынан, тек «жаңа» күйде тапсырыс бере алады
+create or replace function public.check_order() returns trigger
+language plpgsql security definer set search_path = public as $$
+begin
+  if not public.is_admin() then
+    if new.user_id is distinct from auth.uid() then raise exception 'NOT_ALLOWED'; end if;
+    new.status := 'new';
+  end if;
+  if new.promo_code is not null and exists (
+       select 1 from public.orders o where o.user_id = new.user_id and o.status <> 'cancelled') then
+    raise exception 'PROMO_FIRST_ONLY';
+  end if;
+  return new;
+end $$;
+
+drop trigger if exists orders_check on public.orders;
+create trigger orders_check before insert on public.orders
+  for each row execute function public.check_order();
+
 -- ---------- Қауіпсіздік (RLS) ----------
 alter table public.profiles        enable row level security;
 alter table public.products        enable row level security;
@@ -131,6 +164,14 @@ create policy "purchases read"   on public.purchases for select using (user_id =
 create policy "purchases insert" on public.purchases for insert
   with check ((user_id = auth.uid() and status = 'pending' and paid_at is null) or public.is_admin());
 create policy "purchases admin"  on public.purchases for all using (public.is_admin()) with check (public.is_admin());
+
+alter table public.orders enable row level security;
+drop policy if exists "orders read"   on public.orders;
+drop policy if exists "orders insert" on public.orders;
+drop policy if exists "orders admin"  on public.orders;
+create policy "orders read"   on public.orders for select using (user_id = auth.uid() or public.is_admin());
+create policy "orders insert" on public.orders for insert with check (user_id = auth.uid() or public.is_admin());
+create policy "orders admin"  on public.orders for all using (public.is_admin()) with check (public.is_admin());
 
 -- ---------- Файл қоймасы ----------
 insert into storage.buckets (id, name, public) values ('covers', 'covers', true)  on conflict (id) do nothing;
