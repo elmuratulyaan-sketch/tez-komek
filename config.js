@@ -7,8 +7,8 @@ window.SITE_CONFIG = {
 
   // Supabase → Project Settings → API бөлімінен көшіріңіз.
   // Бос тұрса, сайт ДЕМО режимде ашылады (база жоқ, тек көрініс).
-  SUPABASE_URL: "",
-  SUPABASE_ANON_KEY: "",
+  SUPABASE_URL: "https://ezgjwleshusoiiwgvdwl.supabase.co",
+  SUPABASE_ANON_KEY: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImV6Z2p3bGVzaHVzb2lpd2d2ZHdsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTU1MTUzMjksImV4cCI6MjExMTA5MTMyOX0.AdIhdXbbKAjP-goal1aaYjladL7lb56iSOZLEa9Ajyk",
 
   // Kaspi төлем деректері (сатып алушыға көрсетіледі)
   KASPI_PHONE: "+7 777 092 2204",
