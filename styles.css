@@ -294,3 +294,18 @@ body{background-color:var(--paper)}
 .bdg.gold,.tag.hot{color:light-dark(#8a5a00,#ffd36b)}
 .tag.wait{background:light-dark(#fff4d6,rgba(246,181,30,.18));color:light-dark(#8a6500,#ffd36b)}
 .card,.pblock,.step,.offer,.panel,.who{background-color:light-dark(#fff,#16241f)}
+
+/* Пікірлер мен жобалар — тақтаға түйрелген скриншоттар */
+.rv{margin-top:56px}
+.shots{columns:4 230px;column-gap:20px}
+.shots.prj{columns:3 300px}
+.shot{position:relative;display:block;width:100%;margin:0 0 22px;padding:10px 10px 12px;border:0;border-radius:6px;background:light-dark(#fff,#20302a);box-shadow:0 2px 4px rgba(16,32,51,.06),0 14px 28px -14px rgba(16,32,51,.28);cursor:zoom-in;break-inside:avoid;rotate:var(--r);transition:rotate .4s var(--ease),transform .4s var(--ease),box-shadow .4s;text-align:start;-webkit-user-select:none;user-select:none}
+.shot:hover{rotate:0deg;transform:translateY(-4px) scale(1.02);box-shadow:0 20px 40px -16px rgba(16,32,51,.35)}
+.shot img{display:block;width:100%;border-radius:3px;pointer-events:none}
+.shot .cap{display:block;margin-top:8px;font:600 15px 'Caveat',cursive;font-size:20px;color:var(--mute)}
+.pin{position:absolute;top:-8px;left:50%;width:16px;height:16px;margin-left:-8px;border-radius:50%;background:radial-gradient(circle at 35% 35%,#ff8a8a,#d33a4a);box-shadow:0 3px 4px rgba(0,0,0,.25);z-index:1}
+.shot.p .pin{background:radial-gradient(circle at 35% 35%,#7fe3f3,#0a8fb0)}
+.modal-card.wide{width:min(1100px,100%)}
+.lb{position:relative}
+.lb img{display:block;width:100%;border-radius:12px;-webkit-user-select:none;user-select:none;pointer-events:none}
+.lb-shield{position:absolute;inset:0}

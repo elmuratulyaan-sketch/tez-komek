@@ -14,7 +14,7 @@ const T = {
     catalog: 'Бағалар', cabinet: 'Кабинет', admin: 'Админ', login: 'Кіру', logout: 'Шығу', register: 'Тіркелу',
     heroT: 'Презентация, реферат, сабақ жоспары — жасап береміз',
     heroP: 'Мұғалімдерге, оқушыларға, студенттерге және магистранттарға сапалы жұмыс. WhatsApp-қа жазасыз, Kaspi арқылы төлейсіз — дайын жұмыс жеке кабинетіңізде ашылады.',
-    toCatalog: 'Бағаларды көру', order: 'Тапсырыс беру', pricesP: 'Тапсырыс WhatsApp арқылы қабылданады. Тақырыбын, мерзімін жазыңыз — бәрін келісеміз.', deal: 'Келісім бойынша', calcQ: 'Неше керек?', promo: 'Промокод', promoOk: 'Промокод қабылданды', promoBad: 'Мұндай промокод жоқ', urgentW: 'Шұғыл', total: 'Барлығы', pfT: 'Жұмыс мысалдары', pfP: 'Біз жасаған жұмыстардан үлгі — ашып көріңіз.', pfOpen: 'Ашып көру', offT: 'Акциялар', promoUse: 'промокод:', aboutT: 'Біз туралы', privT: 'Құпиялылық саясаты', consent: 'Тіркелу арқылы сіз келісесіз:', contactsT: 'Байланыс', needLogin: 'Тапсырыс беру үшін аккаунтқа кіріңіз немесе тіркеліңіз', loginHint: 'Тапсырыс беру үшін тіркелу керек — 1 минут', promoFirst: 'Промокод тек алғашқы тапсырысқа жарамды', orders: 'Тапсырыстар', myOrders: 'Менің тапсырыстарым', noOrders: 'Әзірге тапсырыс жоқ.', st_new: 'Жаңа', st_in_work: 'Жұмыста', st_done: 'Дайын', st_cancelled: 'Бас тартылды', orderSent: 'Тапсырыс жіберілді! WhatsApp-та хабарламаны жіберіңіз.', orderNo: 'Тапсырыс', client: 'Клиент', waOrder: 'Сәлеметсіз бе! Жаңа тапсырыс', askWa: 'WhatsApp-қа жазу', waHi: 'Сәлеметсіз бе! Тапсырыс бергім келеді:', start: 'Тіркелу — тегін',
+    toCatalog: 'Бағаларды көру', order: 'Тапсырыс беру', pricesP: 'Тапсырыс WhatsApp арқылы қабылданады. Тақырыбын, мерзімін жазыңыз — бәрін келісеміз.', deal: 'Келісім бойынша', calcQ: 'Неше керек?', promo: 'Промокод', promoOk: 'Промокод қабылданды', promoBad: 'Мұндай промокод жоқ', urgentW: 'Шұғыл', total: 'Барлығы', pfT: 'Жұмыс мысалдары', pfP: 'Біз жасаған жұмыстардан үлгі — ашып көріңіз.', pfOpen: 'Ашып көру', offT: 'Акциялар', promoUse: 'промокод:', revT: 'Клиенттер пікірлері', revP: 'Нақты клиенттеріміздің пікірлері.', prjT: 'Клиенттер жобалары', prjP: 'Жасаған жұмыстарымыздан үзінділер. Толық нұсқасы тек тапсырыс иесінде.', aboutT: 'Біз туралы', privT: 'Құпиялылық саясаты', consent: 'Тіркелу арқылы сіз келісесіз:', contactsT: 'Байланыс', needLogin: 'Тапсырыс беру үшін аккаунтқа кіріңіз немесе тіркеліңіз', loginHint: 'Тапсырыс беру үшін тіркелу керек — 1 минут', promoFirst: 'Промокод тек алғашқы тапсырысқа жарамды', orders: 'Тапсырыстар', myOrders: 'Менің тапсырыстарым', noOrders: 'Әзірге тапсырыс жоқ.', st_new: 'Жаңа', st_in_work: 'Жұмыста', st_done: 'Дайын', st_cancelled: 'Бас тартылды', orderSent: 'Тапсырыс жіберілді! WhatsApp-та хабарламаны жіберіңіз.', orderNo: 'Тапсырыс', client: 'Клиент', waOrder: 'Сәлеметсіз бе! Жаңа тапсырыс', askWa: 'WhatsApp-қа жазу', waHi: 'Сәлеметсіз бе! Тапсырыс бергім келеді:', start: 'Тіркелу — тегін',
     whoT: 'Сіз кімсіз?', whoP: 'Таңдаңыз — сізге лайықты жұмыс жасауға көмектеседі.', from: 'бастап',
     newT: 'Бағалар', all: 'Толығырақ',
     s1T: 'WhatsApp-қа жазыңыз', s1P: 'Не керек екенін, тақырыбын және мерзімін айтыңыз.',
@@ -47,7 +47,7 @@ const T = {
     catalog: 'Цены', cabinet: 'Кабинет', admin: 'Админ', login: 'Войти', logout: 'Выйти', register: 'Регистрация',
     heroT: 'Презентации, рефераты, планы уроков — сделаем для вас',
     heroP: 'Качественные работы для учителей, школьников, студентов и магистрантов. Пишете в WhatsApp, оплачиваете через Kaspi — готовая работа откроется в личном кабинете.',
-    toCatalog: 'Посмотреть цены', order: 'Заказать', pricesP: 'Заказы принимаем в WhatsApp. Напишите тему и срок — всё обсудим.', deal: 'Договорная', calcQ: 'Сколько нужно?', promo: 'Промокод', promoOk: 'Промокод принят', promoBad: 'Такого промокода нет', urgentW: 'Срочно', total: 'Итого', pfT: 'Примеры работ', pfP: 'Образцы наших работ — откройте и посмотрите.', pfOpen: 'Открыть', offT: 'Акции', promoUse: 'промокод:', aboutT: 'О нас', privT: 'Политика конфиденциальности', consent: 'Регистрируясь, вы соглашаетесь с документом:', contactsT: 'Контакты', needLogin: 'Чтобы заказать, войдите или зарегистрируйтесь', loginHint: 'Для заказа нужна регистрация — 1 минута', promoFirst: 'Промокод действует только на первый заказ', orders: 'Заказы', myOrders: 'Мои заказы', noOrders: 'Пока нет заказов.', st_new: 'Новый', st_in_work: 'В работе', st_done: 'Готов', st_cancelled: 'Отменён', orderSent: 'Заказ создан! Отправьте сообщение в WhatsApp.', orderNo: 'Заказ', client: 'Клиент', waOrder: 'Здравствуйте! Новый заказ', askWa: 'Написать в WhatsApp', waHi: 'Здравствуйте! Хочу заказать:', start: 'Регистрация — бесплатно',
+    toCatalog: 'Посмотреть цены', order: 'Заказать', pricesP: 'Заказы принимаем в WhatsApp. Напишите тему и срок — всё обсудим.', deal: 'Договорная', calcQ: 'Сколько нужно?', promo: 'Промокод', promoOk: 'Промокод принят', promoBad: 'Такого промокода нет', urgentW: 'Срочно', total: 'Итого', pfT: 'Примеры работ', pfP: 'Образцы наших работ — откройте и посмотрите.', pfOpen: 'Открыть', offT: 'Акции', promoUse: 'промокод:', revT: 'Отзывы клиентов', revP: 'Настоящие отзывы наших клиентов.', prjT: 'Проекты клиентов', prjP: 'Фрагменты наших работ. Полная версия — только у заказчика.', aboutT: 'О нас', privT: 'Политика конфиденциальности', consent: 'Регистрируясь, вы соглашаетесь с документом:', contactsT: 'Контакты', needLogin: 'Чтобы заказать, войдите или зарегистрируйтесь', loginHint: 'Для заказа нужна регистрация — 1 минута', promoFirst: 'Промокод действует только на первый заказ', orders: 'Заказы', myOrders: 'Мои заказы', noOrders: 'Пока нет заказов.', st_new: 'Новый', st_in_work: 'В работе', st_done: 'Готов', st_cancelled: 'Отменён', orderSent: 'Заказ создан! Отправьте сообщение в WhatsApp.', orderNo: 'Заказ', client: 'Клиент', waOrder: 'Здравствуйте! Новый заказ', askWa: 'Написать в WhatsApp', waHi: 'Здравствуйте! Хочу заказать:', start: 'Регистрация — бесплатно',
     whoT: 'Кто вы?', whoP: 'Выберите — так мы сделаем работу под ваш уровень.', from: 'от',
     newT: 'Цены', all: 'Подробнее',
     s1T: 'Напишите в WhatsApp', s1P: 'Расскажите, что нужно: тема и срок.',
@@ -211,7 +211,7 @@ function openModal(html, onMount) {
   if (onMount) onMount($('#modalCard'));
   const f = $('#modalCard input, #modalCard button:not(.x)'); if (f) f.focus();
 }
-function closeModal() { $('#modal').hidden = true; document.body.style.overflow = '' }
+function closeModal() { $('#modal').hidden = true; $('#modalCard').classList.remove('wide'); document.body.style.overflow = '' }
 $('#modal').addEventListener('click', e => { if (e.target.closest('[data-close]')) closeModal() });
 document.addEventListener('keydown', e => { if (e.key === 'Escape' && !$('#modal').hidden) closeModal() });
 
@@ -350,6 +350,31 @@ async function placeOrder(o) {
   }
 }
 
+
+function shots(list, kind) {
+  return list.map((r, i) => `<button class="shot rise ${kind}" data-shot="${esc(r.img)}" data-cap="${esc(L(r.cap || r))}" style="--r:${(i % 3 - 1) * 1.2}deg">
+      <span class="pin" aria-hidden="true"></span>
+      <img src="${esc(r.img)}" alt="${esc(L(r.cap || r))}" loading="lazy" draggable="false">
+      ${L(r.cap || r) ? `<span class="cap">${esc(L(r.cap || r))}</span>` : ''}
+    </button>`).join('');
+}
+function reviewsSec() {
+  const list = cfg.REVIEWS || [];
+  if (!list.length) return '';
+  return `<section class="rv"><div class="sec-h"><div><h2>${t('revT')}</h2><p class="muted" style="margin:8px 0 0">${t('revP')}</p></div></div>
+    <div class="shots rev">${shots(list, 'r')}</div></section>`;
+}
+function projectsSec() {
+  const list = cfg.PROJECTS || [];
+  if (!list.length) return '';
+  return `<section class="rv"><div class="sec-h"><div><h2>${t('prjT')}</h2><p class="muted" style="margin:8px 0 0">${t('prjP')}</p></div></div>
+    <div class="shots prj">${shots(list, 'p')}</div></section>`;
+}
+function bindShots() {
+  $$('.shot').forEach(b => b.onclick = () => openModal(`<div class="lb"><img src="${esc(b.dataset.shot)}" alt="" draggable="false"><div class="lb-shield"></div></div>${b.dataset.cap ? `<p class="muted" style="margin:12px 0 0">${esc(b.dataset.cap)}</p>` : ''}`, c => c.classList.add('wide')));
+}
+document.addEventListener('contextmenu', e => { if (e.target.closest('.shot, .lb')) e.preventDefault() });
+
 function offers() {
   const items = [];
   (cfg.PROMOS || []).forEach(pr => items.push(`<div class="offer rise"><span class="ob">${esc(pr.code)}</span><b>${esc(L(pr))}</b><span class="muted">${t('promo')}: ${esc(pr.code)}</span></div>`));
@@ -393,12 +418,14 @@ async function pageHome() {
     <div class="sec-h"><h2>${t('newT')}</h2><a class="btn ghost sm" href="#/prices">${t('all')} →</a></div>
     ${priceBlocks()}
   </section>
+  ${reviewsSec()}
   ${offers()}
+  ${projectsSec()}
   ${portfolio()}
   <section class="steps">
     ${[['user', 's1'], ['cart', 's2'], ['open', 's3']].map(([ic, k]) => `<div class="step rise"><div class="ic">${icon(ic)}</div><h3>${t(k + 'T')}</h3><p>${t(k + 'P')}</p></div>`).join('')}
   </section>`);
-  bindCalc();
+  bindCalc(); bindShots();
   $$('[data-role]').forEach(b => b.onclick = async () => {
     S.filter.level = S.filter.level === b.dataset.role ? '' : b.dataset.role;
     if (S.user && S.filter.level) { try { await api.updateProfile(S.user.id, { role: S.filter.level }); S.profile.role = S.filter.level } catch (e) {} }
@@ -412,8 +439,10 @@ async function pagePrices() {
   <a class="btn" href="${esc(waLink(t('waHi')))}" target="_blank" rel="noopener">${t('askWa')}</a></div>
   ${priceBlocks()}
   ${offers()}
+  ${reviewsSec()}
+  ${projectsSec()}
   ${portfolio()}`);
-  bindCalc();
+  bindCalc(); bindShots();
 }
 
 async function pageItem(id) {
