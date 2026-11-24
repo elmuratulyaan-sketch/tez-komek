@@ -14,7 +14,7 @@ const T = {
     catalog: 'Бағалар', cabinet: 'Кабинет', admin: 'Админ', login: 'Кіру', logout: 'Шығу', register: 'Тіркелу',
     heroT: 'Презентация, реферат, сабақ жоспары — жасап береміз',
     heroP: 'Мұғалімдерге, оқушыларға, студенттерге және магистранттарға сапалы жұмыс. WhatsApp-қа жазасыз, Kaspi арқылы төлейсіз — дайын жұмыс жеке кабинетіңізде ашылады.',
-    toCatalog: 'Бағаларды көру', order: 'Тапсырыс беру', pricesP: 'Тапсырыс WhatsApp арқылы қабылданады. Тақырыбын, мерзімін жазыңыз — бәрін келісеміз.', deal: 'Келісім бойынша', calcQ: 'Неше керек?', askWa: 'WhatsApp-қа жазу', waHi: 'Сәлеметсіз бе! Тапсырыс бергім келеді:', start: 'Тіркелу — тегін',
+    toCatalog: 'Бағаларды көру', order: 'Тапсырыс беру', pricesP: 'Тапсырыс WhatsApp арқылы қабылданады. Тақырыбын, мерзімін жазыңыз — бәрін келісеміз.', deal: 'Келісім бойынша', calcQ: 'Неше керек?', promo: 'Промокод', promoOk: 'Промокод қабылданды', promoBad: 'Мұндай промокод жоқ', urgentW: 'Шұғыл', total: 'Барлығы', pfT: 'Жұмыс мысалдары', pfP: 'Біз жасаған жұмыстардан үлгі — ашып көріңіз.', pfOpen: 'Ашып көру', offT: 'Акциялар', promoUse: 'промокод:', askWa: 'WhatsApp-қа жазу', waHi: 'Сәлеметсіз бе! Тапсырыс бергім келеді:', start: 'Тіркелу — тегін',
     whoT: 'Сіз кімсіз?', whoP: 'Таңдаңыз — сізге лайықты жұмыс жасауға көмектеседі.', from: 'бастап',
     newT: 'Бағалар', all: 'Толығырақ',
     s1T: 'WhatsApp-қа жазыңыз', s1P: 'Не керек екенін, тақырыбын және мерзімін айтыңыз.',
@@ -47,7 +47,7 @@ const T = {
     catalog: 'Цены', cabinet: 'Кабинет', admin: 'Админ', login: 'Войти', logout: 'Выйти', register: 'Регистрация',
     heroT: 'Презентации, рефераты, планы уроков — сделаем для вас',
     heroP: 'Качественные работы для учителей, школьников, студентов и магистрантов. Пишете в WhatsApp, оплачиваете через Kaspi — готовая работа откроется в личном кабинете.',
-    toCatalog: 'Посмотреть цены', order: 'Заказать', pricesP: 'Заказы принимаем в WhatsApp. Напишите тему и срок — всё обсудим.', deal: 'Договорная', calcQ: 'Сколько нужно?', askWa: 'Написать в WhatsApp', waHi: 'Здравствуйте! Хочу заказать:', start: 'Регистрация — бесплатно',
+    toCatalog: 'Посмотреть цены', order: 'Заказать', pricesP: 'Заказы принимаем в WhatsApp. Напишите тему и срок — всё обсудим.', deal: 'Договорная', calcQ: 'Сколько нужно?', promo: 'Промокод', promoOk: 'Промокод принят', promoBad: 'Такого промокода нет', urgentW: 'Срочно', total: 'Итого', pfT: 'Примеры работ', pfP: 'Образцы наших работ — откройте и посмотрите.', pfOpen: 'Открыть', offT: 'Акции', promoUse: 'промокод:', askWa: 'Написать в WhatsApp', waHi: 'Здравствуйте! Хочу заказать:', start: 'Регистрация — бесплатно',
     whoT: 'Кто вы?', whoP: 'Выберите — так мы сделаем работу под ваш уровень.', from: 'от',
     newT: 'Цены', all: 'Подробнее',
     s1T: 'Напишите в WhatsApp', s1P: 'Расскажите, что нужно: тема и срок.',
@@ -258,25 +258,67 @@ function priceBlocks() {
     <div class="pblock rise">
       <div class="ph"><span class="pic">${icon(g.ic || 'book', 24)}</span><h3>${esc(L(g))}</h3></div>
       <ul>${(g.rows || []).map(r => `<li>
-        <span class="pn">${esc(L(r))}</span>
+        <span class="pn">${esc(L(r))}${r.hot ? ` <span class="tag hot">${esc(L(r.hot))}</span>` : ''}</span>
         <b class="pp">${typeof r.price === 'number' ? money(r.price) : t('deal')}</b>
         <a class="btn sm ghost" href="${esc(waLink(t('waHi') + ' ' + L(g) + ' — ' + L(r)))}" target="_blank" rel="noopener">${t('order')}</a>
       </li>`).join('')}</ul>
-      ${g.unit ? `<div class="calc"><label>${t('calcQ')} <input class="input" type="number" min="1" max="500" value="${esc(g.calcDefault || 1)}" data-unit="${esc(g.unit)}" data-g="${esc(L(g))}" data-u="${esc(lang === 'ru' ? (g.unitRu || '') : (g.unitKk || ''))}"></label><b class="calc-sum">${money((g.calcDefault || 1) * g.unit)}</b><a class="btn sm calc-go" target="_blank" rel="noopener" href="#">${t('order')}</a></div>` : ''}
+      ${g.unit ? `<div class="calc" data-unit="${esc(g.unit)}" data-g="${esc(L(g))}" data-u="${esc(lang === 'ru' ? (g.unitRu || '') : (g.unitKk || ''))}">
+        <label>${t('calcQ')} <input class="input cq" type="number" min="1" max="500" value="${esc(g.calcDefault || 1)}"></label>
+        <b class="calc-sum">${money((g.calcDefault || 1) * g.unit)}</b>
+        <div class="calc-opts">
+          ${cfg.URGENT ? `<label class="tog"><input type="checkbox" class="cu"> ${esc(L(cfg.URGENT))} <span class="muted">+${esc(cfg.URGENT.percent)}%</span></label>` : ''}
+          ${(cfg.PROMOS || []).length ? `<input class="input cp" placeholder="${esc(t('promo'))}" maxlength="20" autocomplete="off">` : ''}
+        </div>
+        <span class="calc-msg"></span>
+        <a class="btn sm calc-go" target="_blank" rel="noopener" href="#">${t('order')}</a>
+      </div>` : ''}
       ${g.note ? `<p class="muted pnote">${esc(L(g.note))}</p>` : ''}
     </div>`).join('')}</div>`;
 }
 
 function bindCalc() {
-  $$('.calc input').forEach(inp => {
-    const box = inp.closest('.calc'), sum = $('.calc-sum', box), go = $('.calc-go', box);
+  $$('.calc').forEach(box => {
+    const q = $('.cq', box), u = $('.cu', box), p = $('.cp', box), sum = $('.calc-sum', box), go = $('.calc-go', box), msg = $('.calc-msg', box);
+    const unit = Number(box.dataset.unit);
     const upd = () => {
-      const n = Math.max(1, Math.min(500, parseInt(inp.value, 10) || 1)), total = n * Number(inp.dataset.unit);
+      const n = Math.max(1, Math.min(500, parseInt(q.value, 10) || 1));
+      let total = n * unit;
+      const urgent = u && u.checked;
+      if (urgent) total = Math.round(total * (1 + cfg.URGENT.percent / 100));
+      const code = p ? p.value.trim().toUpperCase() : '';
+      const promo = code ? (cfg.PROMOS || []).find(x => x.code.toUpperCase() === code) : null;
+      if (promo) total = Math.round(total * (1 - promo.percent / 100));
+      msg.textContent = code ? (promo ? '✓ ' + t('promoOk') + ' (−' + promo.percent + '%)' : t('promoBad')) : '';
+      msg.className = 'calc-msg ' + (code ? (promo ? 'ok' : 'bad') : '');
       sum.textContent = money(total);
-      go.href = waLink(`${t('waHi')} ${inp.dataset.g} — ${n} ${inp.dataset.u} (${money(total)})`);
+      sum.animate([{ transform: 'scale(1.08)' }, { transform: 'scale(1)' }], { duration: 250, easing: 'ease-out' });
+      let text = `${t('waHi')} ${box.dataset.g} — ${n} ${box.dataset.u}`;
+      if (urgent) text += `, ${L(cfg.URGENT)}`;
+      if (promo) text += `, ${t('promoUse')} ${promo.code}`;
+      text += `. ${t('total')}: ${money(total)}`;
+      go.href = waLink(text);
     };
-    inp.oninput = upd; upd();
+    q.oninput = upd; if (u) u.onchange = upd; if (p) p.oninput = upd; upd();
   });
+}
+
+function offers() {
+  const items = [];
+  (cfg.PROMOS || []).forEach(pr => items.push(`<div class="offer rise"><span class="ob">${esc(pr.code)}</span><b>${esc(L(pr))}</b><span class="muted">${t('promo')}: ${esc(pr.code)}</span></div>`));
+  if (cfg.REFERRAL) items.push(`<div class="offer rise"><span class="ob">${icon('user', 20)}</span><b>${esc(L(cfg.REFERRAL))}</b></div>`);
+  if (cfg.URGENT) items.push(`<div class="offer rise"><span class="ob">⚡</span><b>${esc(L(cfg.URGENT))}</b><span class="muted">+${esc(cfg.URGENT.percent)}%</span></div>`);
+  return items.length ? `<section class="offers"><h2>${t('offT')}</h2><div class="offer-row">${items.join('')}</div></section>` : '';
+}
+
+function portfolio() {
+  const list = cfg.PORTFOLIO || [];
+  if (!list.length) return '';
+  return `<section class="pf"><div class="sec-h"><div><h2>${t('pfT')}</h2><p class="muted" style="margin:8px 0 0">${t('pfP')}</p></div></div>
+  <div class="grid">${list.map(w => {
+    const k = kindOf(w.kind);
+    const cv = w.cover ? `<img src="${esc(w.cover)}" alt="" loading="lazy">` : `<div class="gcover pf-cv" style="background:linear-gradient(135deg,#071426,${k.c[0]})"><small>${esc(lang === 'ru' ? (w.tagRu || '') : (w.tagKk || ''))}</small><b>${esc(L(w))}</b></div>`;
+    return `<a class="card rise" href="${esc(w.url || '#')}" target="_blank" rel="noopener"><div class="cv">${cv}</div><div class="bd"><h3>${esc(L(w))}</h3><div class="ft"><span class="tag sky">${esc(L(k))}</span><span class="pf-open">${t('pfOpen')} →</span></div></div></a>`;
+  }).join('')}</div></section>`;
 }
 
 async function pageHome() {
@@ -290,6 +332,7 @@ async function pageHome() {
     <div>
       <h1>${t('heroT')}</h1>
       <p>${t('heroP')}</p>
+      <div class="badges">${cfg.DELIVERY ? `<span class="bdg">⚡ ${esc(L(cfg.DELIVERY))}</span>` : ''}${cfg.GUARANTEE ? `<span class="bdg">✓ ${esc(L(cfg.GUARANTEE))}</span>` : ''}${(cfg.PROMOS || [])[0] ? `<span class="bdg gold">${esc(L(cfg.PROMOS[0]))} · ${esc(cfg.PROMOS[0].code)}</span>` : ''}</div>
       <div class="cta"><a class="btn" href="#/prices">${t('toCatalog')}</a><a class="btn ghost" href="${esc(waLink(t('waHi')))}" target="_blank" rel="noopener">${t('askWa')}</a></div>
     </div>
     <div class="stack3" aria-hidden="true">${three.map(h => `<div class="cover">${h}</div>`).join('')}</div>
@@ -302,6 +345,8 @@ async function pageHome() {
     <div class="sec-h"><h2>${t('newT')}</h2><a class="btn ghost sm" href="#/prices">${t('all')} →</a></div>
     ${priceBlocks()}
   </section>
+  ${offers()}
+  ${portfolio()}
   <section class="steps">
     ${[['user', 's1'], ['cart', 's2'], ['open', 's3']].map(([ic, k]) => `<div class="step rise"><div class="ic">${icon(ic)}</div><h3>${t(k + 'T')}</h3><p>${t(k + 'P')}</p></div>`).join('')}
   </section>`);
@@ -317,7 +362,9 @@ async function pagePrices() {
   mount(`
   <div class="sec-h"><div><h1>${t('catalog')}</h1><p class="muted" style="margin:10px 0 0;max-width:60ch">${t('pricesP')}</p></div>
   <a class="btn" href="${esc(waLink(t('waHi')))}" target="_blank" rel="noopener">${t('askWa')}</a></div>
-  ${priceBlocks()}`);
+  ${priceBlocks()}
+  ${offers()}
+  ${portfolio()}`);
   bindCalc();
 }
 

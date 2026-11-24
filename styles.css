@@ -221,3 +221,27 @@ table.t{width:100%;border-collapse:collapse;font-size:14px}
 .calc .input{width:90px;min-height:40px;text-align:center;font-weight:700}
 .calc-sum{font-family:Montserrat;font-weight:800;font-size:22px;margin-inline-start:auto;transition:transform .25s var(--ease)}
 .calc .btn{background:var(--sky);color:#fff;border-color:transparent}
+.badges{display:flex;gap:8px;flex-wrap:wrap;margin:-6px 0 22px}
+.bdg{display:inline-flex;align-items:center;gap:6px;padding:7px 12px;border-radius:999px;background:var(--sky2);color:var(--sky);font-weight:600;font-size:14px;animation:enter .6s var(--ease) both}
+.bdg:nth-child(2){animation-delay:.1s}.bdg:nth-child(3){animation-delay:.2s}
+.bdg.gold{background:color-mix(in srgb,var(--sun) 22%,transparent);color:#8a5a00}
+.tag.hot{display:table;margin-top:6px;background:color-mix(in srgb,var(--sun) 24%,transparent);color:#8a5a00;white-space:nowrap}
+.calc{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center}
+.calc-opts{grid-column:1/-1;display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.calc-opts .cp{width:140px;text-transform:uppercase;text-align:start;font-weight:600}
+.tog{display:inline-flex;align-items:center;gap:8px;font-weight:500!important;cursor:pointer;min-height:40px}
+.tog input{width:18px;height:18px;accent-color:var(--sky)}
+.calc-msg{grid-column:1/-1;font-size:13px;min-height:0}
+.calc-msg:empty{display:none}
+.calc-msg.ok{color:var(--green)}.calc-msg.bad{color:var(--red)}
+.calc .calc-go{grid-column:1/-1;justify-self:start}
+.offers{margin:56px 0 0}
+.offers h2{margin-bottom:18px}
+.offer-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:16px}
+.offer{display:flex;flex-direction:column;gap:8px;padding:20px;border-radius:20px;background:linear-gradient(135deg,var(--sky2),color-mix(in srgb,var(--sun) 14%,var(--card)));border:1px solid var(--line);transition:transform .35s var(--ease)}
+.offer:hover{transform:translateY(-4px)}
+.ob{align-self:flex-start;padding:6px 12px;border-radius:10px;background:var(--card);font-family:Montserrat;font-weight:800;color:var(--sky);box-shadow:var(--sh)}
+.offer b{font-size:17px}
+.pf{margin-top:56px}
+.pf-cv::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 80% 20%,rgba(246,181,30,.55),transparent 40%),repeating-radial-gradient(circle at 30% 40%,rgba(255,255,255,.18) 0 1px,transparent 2px 22px)}
+.pf-open{color:var(--sky);font-weight:600;font-size:14px}
