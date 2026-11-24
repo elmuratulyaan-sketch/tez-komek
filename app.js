@@ -14,7 +14,7 @@ const T = {
     catalog: 'Бағалар', cabinet: 'Кабинет', admin: 'Админ', login: 'Кіру', logout: 'Шығу', register: 'Тіркелу',
     heroT: 'Презентация, реферат, сабақ жоспары — жасап береміз',
     heroP: 'Мұғалімдерге, оқушыларға, студенттерге және магистранттарға сапалы жұмыс. WhatsApp-қа жазасыз, Kaspi арқылы төлейсіз — дайын жұмыс жеке кабинетіңізде ашылады.',
-    toCatalog: 'Бағаларды көру', order: 'Тапсырыс беру', pricesP: 'Тапсырыс WhatsApp арқылы қабылданады. Тақырыбын, мерзімін жазыңыз — бәрін келісеміз.', deal: 'Келісім бойынша', askWa: 'WhatsApp-қа жазу', waHi: 'Сәлеметсіз бе! Тапсырыс бергім келеді:', start: 'Тіркелу — тегін',
+    toCatalog: 'Бағаларды көру', order: 'Тапсырыс беру', pricesP: 'Тапсырыс WhatsApp арқылы қабылданады. Тақырыбын, мерзімін жазыңыз — бәрін келісеміз.', deal: 'Келісім бойынша', calcQ: 'Неше керек?', askWa: 'WhatsApp-қа жазу', waHi: 'Сәлеметсіз бе! Тапсырыс бергім келеді:', start: 'Тіркелу — тегін',
     whoT: 'Сіз кімсіз?', whoP: 'Таңдаңыз — сізге лайықты жұмыс жасауға көмектеседі.', from: 'бастап',
     newT: 'Бағалар', all: 'Толығырақ',
     s1T: 'WhatsApp-қа жазыңыз', s1P: 'Не керек екенін, тақырыбын және мерзімін айтыңыз.',
@@ -47,7 +47,7 @@ const T = {
     catalog: 'Цены', cabinet: 'Кабинет', admin: 'Админ', login: 'Войти', logout: 'Выйти', register: 'Регистрация',
     heroT: 'Презентации, рефераты, планы уроков — сделаем для вас',
     heroP: 'Качественные работы для учителей, школьников, студентов и магистрантов. Пишете в WhatsApp, оплачиваете через Kaspi — готовая работа откроется в личном кабинете.',
-    toCatalog: 'Посмотреть цены', order: 'Заказать', pricesP: 'Заказы принимаем в WhatsApp. Напишите тему и срок — всё обсудим.', deal: 'Договорная', askWa: 'Написать в WhatsApp', waHi: 'Здравствуйте! Хочу заказать:', start: 'Регистрация — бесплатно',
+    toCatalog: 'Посмотреть цены', order: 'Заказать', pricesP: 'Заказы принимаем в WhatsApp. Напишите тему и срок — всё обсудим.', deal: 'Договорная', calcQ: 'Сколько нужно?', askWa: 'Написать в WhatsApp', waHi: 'Здравствуйте! Хочу заказать:', start: 'Регистрация — бесплатно',
     whoT: 'Кто вы?', whoP: 'Выберите — так мы сделаем работу под ваш уровень.', from: 'от',
     newT: 'Цены', all: 'Подробнее',
     s1T: 'Напишите в WhatsApp', s1P: 'Расскажите, что нужно: тема и срок.',
@@ -262,8 +262,21 @@ function priceBlocks() {
         <b class="pp">${typeof r.price === 'number' ? money(r.price) : t('deal')}</b>
         <a class="btn sm ghost" href="${esc(waLink(t('waHi') + ' ' + L(g) + ' — ' + L(r)))}" target="_blank" rel="noopener">${t('order')}</a>
       </li>`).join('')}</ul>
+      ${g.unit ? `<div class="calc"><label>${t('calcQ')} <input class="input" type="number" min="1" max="500" value="${esc(g.calcDefault || 1)}" data-unit="${esc(g.unit)}" data-g="${esc(L(g))}" data-u="${esc(lang === 'ru' ? (g.unitRu || '') : (g.unitKk || ''))}"></label><b class="calc-sum">${money((g.calcDefault || 1) * g.unit)}</b><a class="btn sm calc-go" target="_blank" rel="noopener" href="#">${t('order')}</a></div>` : ''}
       ${g.note ? `<p class="muted pnote">${esc(L(g.note))}</p>` : ''}
     </div>`).join('')}</div>`;
+}
+
+function bindCalc() {
+  $$('.calc input').forEach(inp => {
+    const box = inp.closest('.calc'), sum = $('.calc-sum', box), go = $('.calc-go', box);
+    const upd = () => {
+      const n = Math.max(1, Math.min(500, parseInt(inp.value, 10) || 1)), total = n * Number(inp.dataset.unit);
+      sum.textContent = money(total);
+      go.href = waLink(`${t('waHi')} ${inp.dataset.g} — ${n} ${inp.dataset.u} (${money(total)})`);
+    };
+    inp.oninput = upd; upd();
+  });
 }
 
 async function pageHome() {
@@ -292,6 +305,7 @@ async function pageHome() {
   <section class="steps">
     ${[['user', 's1'], ['cart', 's2'], ['open', 's3']].map(([ic, k]) => `<div class="step rise"><div class="ic">${icon(ic)}</div><h3>${t(k + 'T')}</h3><p>${t(k + 'P')}</p></div>`).join('')}
   </section>`);
+  bindCalc();
   $$('[data-role]').forEach(b => b.onclick = async () => {
     S.filter.level = S.filter.level === b.dataset.role ? '' : b.dataset.role;
     if (S.user && S.filter.level) { try { await api.updateProfile(S.user.id, { role: S.filter.level }); S.profile.role = S.filter.level } catch (e) {} }
@@ -304,6 +318,7 @@ async function pagePrices() {
   <div class="sec-h"><div><h1>${t('catalog')}</h1><p class="muted" style="margin:10px 0 0;max-width:60ch">${t('pricesP')}</p></div>
   <a class="btn" href="${esc(waLink(t('waHi')))}" target="_blank" rel="noopener">${t('askWa')}</a></div>
   ${priceBlocks()}`);
+  bindCalc();
 }
 
 async function pageItem(id) {

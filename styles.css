@@ -216,3 +216,8 @@ table.t{width:100%;border-collapse:collapse;font-size:14px}
 .pp{font-family:Montserrat;font-weight:800;white-space:nowrap}
 .pnote{margin:10px 0 0;font-size:14px}
 @media(max-width:480px){.pblock li{grid-template-columns:minmax(0,1fr) auto}.pblock li .btn{grid-column:1/-1;justify-self:start}}
+.calc{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-top:12px;padding:14px;border-radius:16px;background:var(--sky2)}
+.calc label{display:flex;align-items:center;gap:10px;font-weight:600;font-size:14px}
+.calc .input{width:90px;min-height:40px;text-align:center;font-weight:700}
+.calc-sum{font-family:Montserrat;font-weight:800;font-size:22px;margin-inline-start:auto;transition:transform .25s var(--ease)}
+.calc .btn{background:var(--sky);color:#fff;border-color:transparent}
