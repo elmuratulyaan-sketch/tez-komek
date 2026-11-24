@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tez Kömek</title>
+<meta name="description" content="Презентациялар, рефераттар, сабақ жоспарлары — мұғалімдер мен оқушыларға">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2064%2064%22%3E%20%3Cdefs%3E%20%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%2312b3d1%22/%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%230a8fb0%22/%3E%3C/linearGradient%3E%20%3C/defs%3E%20%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2218%22%20fill%3D%22url%28%23g%29%22/%3E%20%3Cpath%20d%3D%22M15%2033.5l9.5%209.5L41%2017%22%20fill%3D%22none%22%20stroke%3D%22%23fff%22%20stroke-width%3D%227%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22/%3E%20%3Cpath%20d%3D%22M43.5%2025.5l-6%2011h6.5l-3.5%2011%2010-14h-6.5l4-8z%22%20fill%3D%22%23f6b51e%22/%3E%20%3C/svg%3E">
+</head>
+<body>
+<div class="bg-orbs" aria-hidden="true"><span></span><span></span><span></span></div>
+
+<header class="top">
+  <a href="#/" class="logo"><svg class="mark" viewBox="0 0 64 64" aria-hidden="true">
+  <defs>
+    <linearGradient id="tkg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#12b3d1"/><stop offset="1" stop-color="#0a8fb0"/></linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="18" fill="url(#tkg)"/>
+  <path d="M15 33.5l9.5 9.5L41 17" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M43.5 25.5l-6 11h6.5l-3.5 11 10-14h-6.5l4-8z" fill="#f6b51e"/>
+</svg><b id="siteName"><span class="tz">Tez</span> Kömek</b></a>
+  <nav class="nav" id="nav"></nav>
+  <div class="top-r">
+    <div class="lang" role="group" aria-label="Тіл">
+      <button data-lang="kk">ҚАЗ</button><button data-lang="ru">РУС</button>
+    </div>
+    <div id="authBox"></div>
+  </div>
+</header>
+
+<div id="demoBar" class="demo" hidden></div>
+<main id="view" class="view" tabindex="-1"></main>
+
+<footer class="foot">
+  <span id="footName">Tez Kömek</span>
+  <span id="footText"></span>
+</footer>
+
+<div id="modal" class="modal" hidden>
+  <div class="modal-bg" data-close></div>
+  <div class="modal-card" role="dialog" aria-modal="true" id="modalCard"></div>
+</div>
+<div id="toasts" class="toasts" aria-live="polite"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.min.js"></script>
+<script src="config.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
